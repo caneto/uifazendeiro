@@ -22,7 +22,7 @@ class ButtonStyles {
     ),
   );
 
-  ButtonStyle get greenButton => ElevatedButton.styleFrom(
+  ButtonStyle get transparentButton => ElevatedButton.styleFrom(
     backgroundColor: ColorsApp.instance.greenlinear,
     shape: RoundedRectangleBorder(
       borderRadius: BorderRadius.circular(30),

@@ -18,6 +18,7 @@ class ColorsApp {
   Color get green1 => const Color(0xFF63B5AF);
   Color get green2 => const Color(0xFF438883);
   Color get greenlinear => const Color(0xFF69AEA9);
+  Color get greenlinear2 => const Color(0xFF3F8782); 
 }
 
 extension ColorsAppExtensions on BuildContext {

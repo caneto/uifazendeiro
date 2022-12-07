@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:uifinanceiro/utils/styles/button_styles.dart';
+import 'package:uifinanceiro/ui/homepage/page/home_page.dart';
+import 'package:uifinanceiro/utils/extensions/context_extension.dart';
 import 'package:uifinanceiro/utils/styles/colors_app.dart';
 import 'package:uifinanceiro/utils/styles/text_styles.dart';
 import 'package:uifinanceiro/utils/widgets/button.dart';
@@ -11,75 +12,96 @@ class OnboardingPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Stack(
-        children: [
-          Align(
-            alignment: Alignment.topCenter,
-            child: Padding(
-              padding: EdgeInsets.only(
-                  top: MediaQuery.of(context).size.height * .01),
-              child: Image.asset(
-                'assets/images/specular.png',
-                width: 220,
-                height: MediaQuery.of(context).size.height * .8,
-              ),
-            ),
-          ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Padding(
-                padding: EdgeInsets.only(
-                    top: MediaQuery.of(context).size.height * .70),
-                child: Column(children: [
-                  Text(
-                    'Spend Smarter',
-                    style: TextStyle(
-                      fontSize: 36,
-                      fontWeight: FontWeight.w600,
-                      color: ColorsApp.instance.green2,
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 1,
-                  ),
-                  Text(
-                    'Save More',
-                    style: TextStyle(
-                      fontSize: 36,
-                      fontWeight: FontWeight.w600,
-                      color: ColorsApp.instance.green2,
-                    ),
-                  ),
-                ]),
-              ),
-              Padding(
-                padding: EdgeInsets.only(
-                    bottom: MediaQuery.of(context).size.height * .10),
-                child: Center(
-                  child: Column(
-                    children: [
-                      Button(
-                        height: MediaQuery.of(context).size.height * .066,
-                        widht: MediaQuery.of(context).size.width * .9,
-                        onPressed: () {
-                          //widget.presenter.checkLogin();
-                        },
-                        style: context.buttonStyles.greenButton,
-                        labelStyle: context.textStyles.textStart,
-                        label: 'Get Started',
-                      ),
-                      const SizedBox(height: 3,),
-                      const Text('Already Have Account? Log In'),
-                    ],
+      body: SafeArea(
+        child: 
+          SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Container(
+                  margin: const EdgeInsets.only(top: 76),
+                  padding: EdgeInsets.only(
+                      top: context.height * .01),
+                  child: Image.asset(
+                    'assets/images/specular.png',
+                    width: 277.05,
+                    height: 411,
                   ),
                 ),
-              ),
-            ],
+                const SizedBox(height: 21,),
+                Text(
+                  'Spend Smarter',
+                  style: TextStyle(
+                    fontSize: 36,
+                    fontWeight: FontWeight.w600,
+                    color: ColorsApp.instance.green2,
+                  ),
+                ),
+                const SizedBox(
+                  height: 1,
+                ),
+                Text(
+                  'Save More',
+                  style: TextStyle(
+                    fontSize: 36,
+                    fontWeight: FontWeight.w600,
+                    color: ColorsApp.instance.green2,
+                  ),
+                ),
+                const SizedBox(height: 22,),
+                Center(
+                  child: Container(
+                          decoration: BoxDecoration(
+                           gradient: LinearGradient(
+                            begin: Alignment.topCenter,
+                              end: Alignment.bottomCenter,
+                              colors: [
+                                  ColorsApp.instance.greenlinear,
+                                  ColorsApp.instance.greenlinear2,
+                              ],
+                            ),
+                            borderRadius: BorderRadius.circular(30),
+                            boxShadow: const <BoxShadow>[
+                              BoxShadow(
+                                color: Color.fromRGBO(0, 0, 0, 0.57),
+                                blurRadius: 5
+                              )
+                              
+                            ]
+                        ),
+                        child: Button(
+                          height: context.height * .066,
+                          widht: context.width * .9,
+                          onPressed: () {
+                            //widget.presenter.checkLogin();
+                            Navigator.of(context).pushReplacement(MaterialPageRoute(
+                              builder: (BuildContext context) => const HomePage()));
+                          },
+                          style: ElevatedButton.styleFrom(
+                             backgroundColor: Colors.transparent,
+                             disabledForegroundColor: Colors.transparent,
+                             shadowColor: Colors.transparent,
+                             //make color or elevated button transparent
+                          ),
+                          labelStyle: context.textStyles.textStart,
+                          label: 'Get Started',
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 17,),
+                    Text(
+                      'Already Have Account? Log In',
+                      style: TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.normal,
+                        color: ColorsApp.instance.green2,
+                      ),  
+                    ),
+              ],
+            ),
           )
-        ],
-      ),
-    );
+        ),
+      );
   }
 }
