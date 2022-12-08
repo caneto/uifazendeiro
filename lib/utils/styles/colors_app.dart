@@ -21,6 +21,8 @@ class ColorsApp {
   Color get greenlinear2 => const Color(0xFF3F8782);
   Color get greencard => const Color(0xFF2F7E79); 
   Color get greenfundo => const Color(0xFF408A7C);
+  
+  Color get orangeBadge => const Color(0xFFFFAB7B);
 }
 
 extension ColorsAppExtensions on BuildContext {

@@ -51,6 +51,16 @@ class TextStyles {
     color: Colors.white
   );
 
+  TextStyle get titleCardWhite => textPrimaryFontSemiBold.copyWith(
+    fontSize: 18,
+    color: Colors.white
+  );
+
+  TextStyle get titleCardValueBoldWhite => textPrimaryFontBold.copyWith(
+    fontSize: 30,
+    color: Colors.white
+  );
+
   TextStyle get titleBlack => textPrimaryFontBold.copyWith(
       fontSize: 22,
       color: Colors.black
