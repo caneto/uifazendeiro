@@ -36,7 +36,7 @@ class HomePage extends StatelessWidget {
             padding: EdgeInsets.only(
                 top: 75, left: 322, right: 25, bottom: context.height * .80),
             child: Container(
-              padding: EdgeInsets.all(10),
+              padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(
                   color: ColorsApp.instance.greenfundo,
                   borderRadius: BorderRadius.circular(25),
