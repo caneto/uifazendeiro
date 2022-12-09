@@ -29,6 +29,7 @@ class CardHomepageWidget extends StatelessWidget {
                 children: [
                   const SizedBox(height: 30,),
                   Container(
+                    margin: const EdgeInsets.only(bottom: 6),
                     height: 25,
                     color: Colors.transparent,
                     child: Row(
@@ -53,30 +54,84 @@ class CardHomepageWidget extends StatelessWidget {
                       Text('\$ 2,548.00', style: context.textStyles.titleCardValueBoldWhite),
                     ],
                   ),
+                  const SizedBox(height: 35,),
+                  Container(
+                    margin: const EdgeInsets.only(bottom: 11),
+                    height: 30,
+                    color: Colors.transparent,
+                    child: Row(
+                      children: [
+                        const SizedBox(
+                           width: 25,
+                        ),
+                        Container(
+                          padding: const EdgeInsets.all(8),
+                          decoration: BoxDecoration(
+                            color: ColorsApp.instance.greenfundo,
+                            borderRadius: BorderRadius.circular(20),
+                            boxShadow: <BoxShadow>[
+                              BoxShadow(
+                                color: ColorsApp.instance.greenfundo.withOpacity(0.3),
+                                spreadRadius: 2,
+                                blurRadius: 3,
+                                offset: const Offset(2, 3),
+                              )
+                            ]
+                          ),
+                          child: Image.asset("assets/images/arrowdown.png"),
+                        ),
+                        const SizedBox(
+                           width: 11,
+                        ),
+                        Text('Income', style: context.textStyles.textPrimaryFontMedium.copyWith(
+                          color: Colors.white,
+                          fontSize: 18
+                        )),
+                        const SizedBox(
+                           width: 59,
+                        ),
+                        Container(
+                          padding: const EdgeInsets.all(8),
+                          decoration: BoxDecoration(
+                            color: ColorsApp.instance.greenfundo,
+                            borderRadius: BorderRadius.circular(20),
+                            boxShadow: <BoxShadow>[
+                              BoxShadow(
+                                color: ColorsApp.instance.greenfundo.withOpacity(0.3),
+                                spreadRadius: 2,
+                                blurRadius: 3,
+                                offset: const Offset(2, 3),
+                              )
+                            ]
+                          ),
+                          child: Image.asset("assets/images/arrowup.png", ),
+                        ),
+                        const SizedBox(
+                           width: 11,
+                        ),
+                        Text('Expenses', style: context.textStyles.textPrimaryFontMedium.copyWith(
+                          color: Colors.white,
+                          fontSize: 20
+                        )),
+                      ],
+                    ),
+                  ),
                   Row(
                     children: [
-                      const SizedBox(
-                         width: 25,
-                         height: 95,
+                      SizedBox(width: 25,),
+                      Expanded(
+                        child: Text('\$ 1,840.00', style: context.textStyles.titleCardValueBoldWhite.copyWith(
+                          fontSize: 20
+                        )),
                       ),
-                      Container(
-                        padding: const EdgeInsets.all(11),
-                        decoration: BoxDecoration(
-                          color: ColorsApp.instance.greenfundo,
-                          borderRadius: BorderRadius.circular(20),
-                          boxShadow: <BoxShadow>[
-                            BoxShadow(
-                              color: ColorsApp.instance.greenfundo.withOpacity(0.3),
-                              spreadRadius: 2,
-                              blurRadius: 3,
-                              offset: const Offset(2, 3),
-                            )
-                          ]
-                        ),
-                        child: Image.asset("assets/images/arrowdown.png"),
-                      )
+                      Expanded(
+                        child: Text('\$ 284.00', style: context.textStyles.titleCardValueBoldWhite.copyWith(
+                          fontSize: 20
+                        )),
+                      ),
+                      
                     ],
-                  )
+                  ),
                 ],
               )
             ),
