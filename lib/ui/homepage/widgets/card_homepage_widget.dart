@@ -11,7 +11,7 @@ class CardHomepageWidget extends StatelessWidget {
    Widget build(BuildContext context) {
        return Container(
             padding: EdgeInsets.only(
-                top: 150, left: 20, right: 20, bottom: context.height * .48),
+                top: 110, left: 20, right: 20, bottom: context.height * .59),
             child: Container(
               decoration: BoxDecoration(
                 color: ColorsApp.instance.greencard,
@@ -118,7 +118,7 @@ class CardHomepageWidget extends StatelessWidget {
                   ),
                   Row(
                     children: [
-                      SizedBox(width: 25,),
+                      const SizedBox(width: 25,),
                       Expanded(
                         child: Text('\$ 1,840.00', style: context.textStyles.titleCardValueBoldWhite.copyWith(
                           fontSize: 20

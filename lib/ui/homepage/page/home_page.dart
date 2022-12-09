@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:uifinanceiro/ui/homepage/widgets/badge_homepage_widget.dart';
 import 'package:uifinanceiro/ui/homepage/widgets/card_homepage_widget.dart';
+import 'package:uifinanceiro/ui/homepage/widgets/transactions_homepage_widget.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -15,6 +16,7 @@ class HomePage extends StatelessWidget {
           ),
           const CardHomepageWidget(),
           const BadgeHomepageWidget(),
+          const TransactionsHomepageWidget(),
         ]),
       ),
     );
