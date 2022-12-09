@@ -48,10 +48,32 @@ class CardHomepageWidget extends StatelessWidget {
                       ),
                       Text('\$ 2,548.00', style: context.textStyles.titleCardValueBoldWhite),
                     ],
+                  ),
+                  Row(
+                    children: [
+                      const SizedBox(
+                         width: 25,
+                         height: 90,
+                      ),
+                      Container(
+                        padding: const EdgeInsets.all(16),
+                        decoration: BoxDecoration(
+                          color: ColorsApp.instance.greenfundo,
+                          borderRadius: BorderRadius.circular(15),
+                          boxShadow: <BoxShadow>[
+                            BoxShadow(
+                              color: ColorsApp.instance.greenfundo.withOpacity(0.3),
+                              spreadRadius: 2,
+                              blurRadius: 3,
+                              offset: const Offset(2, 3),
+                            )
+                          ]
+                        ),
+                      )
+                    ],
                   )
                 ],
-
-              ),
+              )
             ),
           );
   }
