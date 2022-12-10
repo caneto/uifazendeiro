@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:uifinanceiro/ui/onboarding/onboarding_page.dart';
+import 'package:uifinanceiro/utils/extensions/context_extension.dart';
 import 'package:uifinanceiro/utils/styles/colors_app.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -11,9 +11,7 @@ class SplashScreen extends StatelessWidget {
   Widget build(BuildContext context) {
 
     Timer(const Duration(seconds: 5),
-          () => Navigator.of(context).pushReplacement(MaterialPageRoute(
-                builder: (BuildContext context) => const OnboardingPage())));
-
+          () => context.pushReplacementNamed('onboardingPage'));
 
     return Scaffold(
         body: Container(

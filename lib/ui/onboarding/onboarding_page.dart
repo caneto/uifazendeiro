@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:uifinanceiro/ui/homepage/page/home_page.dart';
 import 'package:uifinanceiro/utils/extensions/context_extension.dart';
 import 'package:uifinanceiro/utils/styles/colors_app.dart';
 import 'package:uifinanceiro/utils/styles/text_styles.dart';
@@ -75,9 +74,7 @@ class OnboardingPage extends StatelessWidget {
                       height: context.height * .066,
                       widht: context.width * .9,
                       onPressed: () {
-                        //widget.presenter.checkLogin();
-                        Navigator.of(context).pushReplacement(MaterialPageRoute(
-                          builder: (BuildContext context) => const HomePage()));
+                        context.pushReplacementNamed('homePage');
                       },
                       style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.transparent,

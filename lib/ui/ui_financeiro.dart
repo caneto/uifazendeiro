@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:uifinanceiro/ui/homepage/page/home_page.dart';
+import 'package:uifinanceiro/ui/onboarding/onboarding_page.dart';
 import 'package:uifinanceiro/ui/splashscreen/splash_screen.dart';
+import 'package:uifinanceiro/ui/statistic/page/statistics_page.dart';
 
 class UiFinanceiro extends StatelessWidget {
   const UiFinanceiro({super.key});
@@ -13,7 +16,14 @@ class UiFinanceiro extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const SplashScreen(),
+//      home: const SplashScreen(),
+    routes: {
+        '/': (context) => const SplashScreen(),
+        'onboardingPage': (context) => const OnboardingPage(),
+        'homePage': (context) => const HomePage(),
+        'statisticsPage': (context) => const StatisticsPage(),
+        //'calendarPage':(context) => const CalendarPage(),
+      },
     );
   }
 }
