@@ -3,8 +3,6 @@ import 'package:uifinanceiro/ui/homepage/widgets/data_transactions_widget.dart/d
 import 'package:uifinanceiro/ui/homepage/widgets/data_transactions_widget.dart/data_transfer_transactions_widget.dart';
 import 'package:uifinanceiro/ui/homepage/widgets/data_transactions_widget.dart/data_up_transctions_widget.dart';
 import 'package:uifinanceiro/ui/homepage/widgets/data_transactions_widget.dart/data_youtube_transctions_widget.dart';
-import 'package:uifinanceiro/utils/extensions/context_extension.dart';
-import 'package:uifinanceiro/utils/styles/colors_app.dart';
 import 'package:uifinanceiro/utils/styles/text_styles.dart';
 
 class TransactionsHomepageWidget extends StatelessWidget {
@@ -15,7 +13,7 @@ class TransactionsHomepageWidget extends StatelessWidget {
    Widget build(BuildContext context) {
        return Container(
          padding: const EdgeInsets.only(
-                   top: 370, left: 20, right: 20),
+                   top: 355, left: 20, right: 20, bottom: 3),
          child: Column(
            children: [
              Row(
@@ -46,7 +44,6 @@ class TransactionsHomepageWidget extends StatelessWidget {
                       DataYouTubeTransctionsWidget()
                     ],
                   ),
-                  
                 ],
                ),
              ),

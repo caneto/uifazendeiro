@@ -38,6 +38,7 @@ dependencies:
   cupertino_icons: ^1.0.2
 
   badges: ^2.0.3
+  curved_navigation_bar: ^1.0.3
 
   page_route_animator: ^1.0.3
 

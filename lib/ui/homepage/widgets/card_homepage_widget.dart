@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:uifinanceiro/utils/extensions/context_extension.dart';
 import 'package:uifinanceiro/utils/styles/colors_app.dart';
 import 'package:uifinanceiro/utils/styles/text_styles.dart';
 
@@ -10,8 +9,8 @@ class CardHomepageWidget extends StatelessWidget {
    @override
    Widget build(BuildContext context) {
        return Container(
-            padding: EdgeInsets.only(
-                top: 110, left: 20, right: 20, bottom: context.height * .59),
+            padding: const EdgeInsets.only(
+                top: 105, left: 20, right: 20, bottom: 402),
             child: Container(
               decoration: BoxDecoration(
                 color: ColorsApp.instance.greencard,
