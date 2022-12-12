@@ -39,6 +39,7 @@ dependencies:
 
   badges: ^2.0.3
   curved_navigation_bar: ^1.0.3
+  fl_chart: ^0.55.2
 
   page_route_animator: ^1.0.3
 
