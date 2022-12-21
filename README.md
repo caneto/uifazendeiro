@@ -13,5 +13,4 @@ Ui Financeiro baseado no Figma
 
 
 
-
 <b>Desenvolvido apenas para Android, e iOS.</b> - Testado exclusivamente em Android (Emulador). 
