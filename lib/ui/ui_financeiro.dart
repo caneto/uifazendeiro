@@ -4,6 +4,8 @@ import 'package:uifinanceiro/ui/onboarding/onboarding_page.dart';
 import 'package:uifinanceiro/ui/splashscreen/splash_screen.dart';
 import 'package:uifinanceiro/ui/statistic/page/statistics_page.dart';
 
+import 'creditcard/credit_card_page.dart';
+
 class UiFinanceiro extends StatelessWidget {
   const UiFinanceiro({super.key});
 
@@ -22,7 +24,7 @@ class UiFinanceiro extends StatelessWidget {
         'onboardingPage': (context) => const OnboardingPage(),
         'homePage': (context) => const HomePage(),
         'statisticsPage': (context) => const StatisticsPage(),
-        //'calendarPage':(context) => const CalendarPage(),
+        'creditCardPage':(context) => CreditCardPage(),
       },
     );
   }

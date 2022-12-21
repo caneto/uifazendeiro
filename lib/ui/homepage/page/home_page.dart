@@ -6,12 +6,20 @@ import 'package:uifinanceiro/ui/homepage/widgets/send_again_homepage_widget.dart
 import 'package:uifinanceiro/ui/homepage/widgets/transactions_homepage_widget.dart';
 import 'package:uifinanceiro/utils/styles/text_styles.dart';
 
+import '../../../utils/styles/colors_app.dart';
+import '../widgets/menu_drawer.dart';
+
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: MenuDrawer(),
+      appBar: AppBar(
+        backgroundColor: ColorsApp.instance.green2,
+        title: const Text('Financeiro', style: TextStyle(color: Colors.white),),
+      ),
       body: SafeArea(
         child: Stack(children: [
           SizedBox(
@@ -23,7 +31,7 @@ class HomePage extends StatelessWidget {
           Expanded(
             child: Container(
               padding: const EdgeInsets.only(
-                   top: 608, left: 20, right: 20, bottom: 10),
+                   top: 572, left: 20, right: 20, bottom: 10),
               child: Column(
                children: [
                   Row(

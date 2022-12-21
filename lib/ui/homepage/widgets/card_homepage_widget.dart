@@ -10,7 +10,7 @@ class CardHomepageWidget extends StatelessWidget {
    Widget build(BuildContext context) {
        return Container(
             padding: const EdgeInsets.only(
-                top: 105, left: 20, right: 20, bottom: 402),
+                top: 80, left: 20, right: 20, bottom: 402),
             child: Container(
               decoration: BoxDecoration(
                 color: ColorsApp.instance.greencard,

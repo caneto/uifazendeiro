@@ -13,7 +13,7 @@ class TransactionsHomepageWidget extends StatelessWidget {
    Widget build(BuildContext context) {
        return Container(
          padding: const EdgeInsets.only(
-                   top: 355, left: 20, right: 20, bottom: 3),
+                   top: 315, left: 20, right: 20, bottom: 3),
          child: Column(
            children: [
              Row(

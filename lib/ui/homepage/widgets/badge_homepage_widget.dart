@@ -11,7 +11,7 @@ class BadgeHomepageWidget extends StatelessWidget {
    Widget build(BuildContext context) {
        return Container(
             padding: EdgeInsets.only(
-                top: 25, left: 322, right: 25, bottom: context.height * .80),
+                top: 20, left: 322, right: 25, bottom: context.height * .30),
             child: Container(
               padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(

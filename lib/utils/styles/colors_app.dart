@@ -24,6 +24,8 @@ class ColorsApp {
   Color get greennumber => const Color(0xFF25A969);
   
   Color get orangeBadge => const Color(0xFFFFAB7B);
+
+  Color get dartblue => const Color(0xFF090943);
 }
 
 extension ColorsAppExtensions on BuildContext {
