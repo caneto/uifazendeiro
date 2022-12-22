@@ -252,13 +252,6 @@ class _CreditCardPageState extends State<CreditCardPage> {
                         LengthLimitingTextInputFormatter(4),
                         CardDateInputFormatter(),
                       ],
-                      onTap: () {
-                        setState(() {
-                          Future.delayed(const Duration(milliseconds: 300), () {
-                            flipCardController.toggleCard();
-                          });
-                        });
-                      },
                       onChanged: (value) {
                         var text = value.replaceAll(RegExp(r'\s+\b|\b\s'), ' ');
                         setState(() {
