@@ -24,7 +24,7 @@ class UiFinanceiro extends StatelessWidget {
         'onboardingPage': (context) => const OnboardingPage(),
         'homePage': (context) => const HomePage(),
         'statisticsPage': (context) => const StatisticsPage(),
-        'creditCardPage':(context) => CreditCardPage(),
+        'creditCardPage':(context) => const CreditCardPage(),
       },
     );
   }
