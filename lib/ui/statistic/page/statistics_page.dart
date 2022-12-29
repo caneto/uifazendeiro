@@ -7,7 +7,19 @@ class StatisticsPage extends StatelessWidget {
    @override
    Widget build(BuildContext context) {
        return Scaffold(
-           appBar: AppBar(title: const Text('Estatisticas'),),
+           appBar: AppBar(
+            backgroundColor: Colors.white,
+            foregroundColor: Colors.black,
+            title: const Text('Estatisticas', style: TextStyle(
+              color: Colors.black
+            ),),
+            actions: [
+                Image.asset(
+                  'assets/images/vector.png',
+                  color: Colors.black,
+                ),
+            ],
+           ),
            body: Container(),
        );
   }

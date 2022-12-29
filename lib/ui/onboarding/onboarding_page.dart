@@ -77,7 +77,7 @@ class OnboardingPage extends StatelessWidget {
                   height: context.height * .066,
                   widht: context.width * .9,
                   onPressed: () {
-                    context.pushReplacementNamed('signin');
+                    context.pushReplacementNamed('signup');
                   },
                   style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.transparent,
@@ -91,7 +91,7 @@ class OnboardingPage extends StatelessWidget {
             ),
             MultiTextButtom(
               onPressed: () {
-                    context.pushReplacementNamed('signup');
+                    context.pushReplacementNamed('signin');
               },
               children: [
                   Text(
