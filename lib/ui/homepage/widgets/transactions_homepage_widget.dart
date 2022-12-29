@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:uifinanceiro/ui/homepage/widgets/data_transactions_widget.dart/data_paypal_transctions_widget.dart';
-import 'package:uifinanceiro/ui/homepage/widgets/data_transactions_widget.dart/data_transfer_transactions_widget.dart';
-import 'package:uifinanceiro/ui/homepage/widgets/data_transactions_widget.dart/data_up_transctions_widget.dart';
-import 'package:uifinanceiro/ui/homepage/widgets/data_transactions_widget.dart/data_youtube_transctions_widget.dart';
+import 'package:uifinanceiro/ui/homepage/widgets/data_transactions_widget/data_paypal_transctions_widget.dart';
+import 'package:uifinanceiro/ui/homepage/widgets/data_transactions_widget/data_transfer_transactions_widget.dart';
+import 'package:uifinanceiro/ui/homepage/widgets/data_transactions_widget/data_up_transctions_widget.dart';
+import 'package:uifinanceiro/ui/homepage/widgets/data_transactions_widget/data_youtube_transctions_widget.dart';
 import 'package:uifinanceiro/utils/styles/text_styles.dart';
 
 class TransactionsHomepageWidget extends StatelessWidget {

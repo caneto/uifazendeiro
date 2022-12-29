@@ -164,7 +164,9 @@ class _SignUpPageState extends State<SignUpPage> {
               ),
             ),
             MultiTextButtom(
-              onPressed: () => log('mensagem'),
+              onPressed: () {
+                    context.pushReplacementNamed('signin');
+              },
               children: [
                   Text(
                     'Already Have Account?  ',
