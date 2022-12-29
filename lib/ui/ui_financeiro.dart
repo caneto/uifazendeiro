@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:uifinanceiro/ui/createaccout/page/create_accout_page.dart';
 import 'package:uifinanceiro/ui/homepage/page/home_page.dart';
 import 'package:uifinanceiro/ui/onboarding/onboarding_page.dart';
 import 'package:uifinanceiro/ui/splashscreen/splash_screen.dart';
@@ -25,6 +26,7 @@ class UiFinanceiro extends StatelessWidget {
         'homePage': (context) => const HomePage(),
         'statisticsPage': (context) => const StatisticsPage(),
         'creditCardPage':(context) => const CreditCardPage(),
+        'createaccout': (context) => const CreateAccoutPage()
       },
     );
   }

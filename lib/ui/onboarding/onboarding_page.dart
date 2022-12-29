@@ -77,7 +77,7 @@ class OnboardingPage extends StatelessWidget {
                   height: context.height * .066,
                   widht: context.width * .9,
                   onPressed: () {
-                    context.pushReplacementNamed('homePage');
+                    context.pushReplacementNamed('createaccout');
                   },
                   style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.transparent,
