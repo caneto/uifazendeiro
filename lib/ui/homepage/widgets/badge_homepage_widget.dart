@@ -1,6 +1,5 @@
 import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
-import 'package:uifinanceiro/utils/extensions/context_extension.dart';
 import 'package:uifinanceiro/utils/styles/colors_app.dart';
 
 class BadgeHomepageWidget extends StatelessWidget {
@@ -10,8 +9,8 @@ class BadgeHomepageWidget extends StatelessWidget {
    @override
    Widget build(BuildContext context) {
        return Container(
-            padding: EdgeInsets.only(
-                top: 20, left: 322, right: 25, bottom: context.height * .30),
+            padding: const EdgeInsets.only(
+                top: 8, left: 332, right: 20, bottom: 10),
             child: Container(
               padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(

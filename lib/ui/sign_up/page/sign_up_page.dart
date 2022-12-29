@@ -148,7 +148,7 @@ class _SignUpPageState extends State<SignUpPage> {
                         //  email: emailEC.text;
                         //  password: passwordEC.text;
                         //)
-                        //context.pushReplacementNamed('createaccout');
+                        context.pushReplacementNamed('homePage');
                       } else {
                         log('erro ao logar');                        
                       }
