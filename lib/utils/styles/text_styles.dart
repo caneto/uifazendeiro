@@ -10,6 +10,7 @@ class TextStyles {
     return _instance!;
   }
 
+  //Font Inter
   String get primaryFont => 'Inter';
   
   //primary font
@@ -45,6 +46,12 @@ class TextStyles {
     fontSize: 18,
     color: Colors.white
   );
+
+  TextStyle get textSmall => textPrimaryFontRegular.copyWith(
+    fontSize: 14,
+    color: ColorsApp.instance.green2
+  );
+
 
   TextStyle get titleWhite => textPrimaryFontBold.copyWith(
     fontSize: 22,
