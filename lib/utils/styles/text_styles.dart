@@ -52,6 +52,21 @@ class TextStyles {
     color: ColorsApp.instance.green2
   );
 
+  TextStyle get inputLabelText => textPrimaryFontRegular.copyWith(
+    fontSize: 14.0,
+    fontWeight: FontWeight.w400,
+  );
+
+
+  TextStyle get inputText => textPrimaryFontRegular.copyWith(
+    fontSize: 14.0,
+    fontWeight: FontWeight.w500,
+  );
+
+  TextStyle get inputHintText => textPrimaryFontRegular.copyWith(
+    fontSize: 12.0,
+    fontWeight: FontWeight.w400,
+  );
 
   TextStyle get titleWhite => textPrimaryFontBold.copyWith(
     fontSize: 22,
