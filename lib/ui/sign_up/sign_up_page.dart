@@ -3,6 +3,7 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:uifinanceiro/utils/extensions/context_extension.dart';
 import 'package:uifinanceiro/utils/widgets/custom_text_form_field.dart';
+import 'package:uifinanceiro/utils/widgets/gradient_focus_textfield.dart';
 import 'package:uifinanceiro/utils/widgets/password_form_field.dart';
 import 'package:validatorless/validatorless.dart';
 
