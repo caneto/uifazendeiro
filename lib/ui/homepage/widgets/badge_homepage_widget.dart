@@ -1,4 +1,4 @@
-import 'package:badges/badges.dart';
+import 'package:badges/badges.dart' as badges;
 import 'package:flutter/material.dart';
 import 'package:uifinanceiro/utils/styles/colors_app.dart';
 
@@ -24,9 +24,9 @@ class BadgeHomepageWidget extends StatelessWidget {
                       offset: const Offset(2, 3),
                     )
                   ]),
-              child: Badge(
-                position: BadgePosition.topEnd(top: -2, end: 1),
-                shape: BadgeShape.circle,
+              child: badges.Badge(
+                position: badges.BadgePosition.topEnd(top: -2, end: 1),
+                shape: badges.BadgeShape.circle,
                 badgeColor: ColorsApp.instance.orangeBadge,
                 child: Image.asset(
                   'assets/images/bell.png',
